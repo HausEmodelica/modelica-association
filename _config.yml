@@ -1,20 +1,10 @@
 url: https://c-papabechtelou.github.io/first-jekyll-project
 
 collections:
-  authors:
+  events:
     output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
   - scope:
       path: ""
     values:
@@ -24,3 +14,4 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+

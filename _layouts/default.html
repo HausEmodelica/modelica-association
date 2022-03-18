@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
     {% if jekyll.environment == "production" %}
@@ -11,8 +11,12 @@
     {% endif %}
 </head>
 <body>
-{% include navigation.html %}
-{{ content }}
 
+{% include navigation.html %}
+{% include header.html %}
+<div class="container">
+    {% include newsAndEvents.html %}
+{{ content }}
+</div>
 </body>
 </html>
