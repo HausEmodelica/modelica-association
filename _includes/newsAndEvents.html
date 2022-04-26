@@ -1,24 +1,32 @@
-<div class="row">
-    <div class="col-sm-6"><h3>Latest News</h3>
+<div class="row news-and-events">
+    <div class="col-sm-6 news">
+        <div class="row">
+            <div class="col-sm-12 title"> Latest News</div>
+        </div>
+        {% for news in site.categories.news reversed%}
+        <a href="{{site.url}}{{ post.url }}">
+            <div class="row entry">
 
-        <ul>
-            {% for post in site.posts %}
-            <li>
-                <h2><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h2>
-                {{ post.excerpt }}
-            </li>
-            {% endfor %}
-        </ul></div>
-    <div class="col-sm-6"><h3>Upcoming Events</h3>
+                <div class="col-sm-3 date"> {{news.date | date: "%b %-d, %Y" }}</div>
+                <div class="col-sm-9 info">{{ news.excerpt }}</div>
+            </div>
+        </a>
+        {% endfor %}
+       </div>
+    <div class="col-sm-6 events">
+        <div class="row">
+            <div class="col-sm-12 title"> Upcoming Events</div>
+        </div>
+            {% for event in site.categories.events reversed %}
+        <a href="{{site.url}}{{ event.url }}">
+            <div class="row entry">
+                    <div class="col-sm-3 date">{{event.date | date: "%b %-d, %Y" }}</div>
+                    <div class="col-sm-9 info">{{ event.excerpt }}</div>
 
-        <ul>
-            {% for event in site.events %}
-            <li>
-                <h2><a href="{{site.url}}{{ event.url }}">{{ event.title }}</a></h2>
-                {{ event.excerpt }}
-            </li>
+            </div>
+        </a>
             {% endfor %}
-        </ul></div>
+        </div>
 </div>
 
 
