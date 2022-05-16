@@ -36,6 +36,10 @@ $font-light: 300;
 $font-normal: normal;
 $font-italic: italic;
 
+/* for testing */
+$memberImgUrl: url("https://c-papabechtelou.github.io/first-template/assets/images/gettyimages-82214615-2048x2048.png");
+//$memberImgUrl: url("/assets/images/gettyimages-82214615-2048x2048.png");
+
 body{
   font-family: europa, sans-serif !important;
   letter-spacing: 0;
@@ -262,7 +266,7 @@ body{
 /* ------------------- BECOME A MEMBER ------------------- */
 .become-member{
   .member-background{
-    background-image: url("/assets/images/gettyimages-82214615-2048x2048.png");
+    background-image: $memberImgUrl;
     height: 36.25rem;
     padding:6.25rem 60rem 6.25rem 8.75rem;
   }
