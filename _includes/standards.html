@@ -1,7 +1,7 @@
 <div class="row standards">
 <div class="col-sm-12">
     <div class="row ">
-        <div class="col-sm-4 offset-sm-4 title">Modelica Association Standards</div>
+        <div class="col-sm-12 title">Modelica Association Standards</div>
     </div>
     <div class="row">
     {% for item in site.data.standards %}
@@ -11,7 +11,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{item.name}}</h5>
                 <p class="card-text">{{item.info}}</p>
-                <a href="{{item.link}}" class="btn btn-primary">More about {{item.name}}</a>
+                <a href="{{item.link}}" class="btn">More about {{item.name}}</a>
             </div>
         </div>
     </div>
