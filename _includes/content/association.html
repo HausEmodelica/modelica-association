@@ -1,0 +1,17 @@
+<div class="row ">
+    <div class="col-12 has--red-headline vel--title">
+        <h2>About Modelica Association</h2>
+    </div>
+</div>
+<div class="row">
+    {% for item in site.data.association %}
+        <div class="col-6 col-lg-4 is--centered d-grid">
+            <img src="{{site.url}}{{item.icon}}"/>
+            <h5>{{item.title}}</h5>
+            <p>{{item.info}}</p>
+            <button type="button" class="btn is--centered-link">
+                <a href="{{site.url}}{{item.link}}">{{item.link-title}}</a
+            </button>>
+        </div>
+    {% endfor %}
+</div>

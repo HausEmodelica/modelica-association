@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-12 col-lg-4 card has--background-medium">
+        <div class="row">
+            <div class="col-12 vel--title">
+                <h3>Modelica benefits</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 vel--info">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatemExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 vel--link">
+                <button type="button" class="btn">
+                    <a href="{{item.link}}">More about our benefits</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-8 vel--quotes">
+        <div class="row">
+            <div class="col-12 col-lg-3"><img src="{{site.url}}/assets/images/placeholder_benefits.png"/></div>
+            <div class="col-12 col-lg-5 has--white-font">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                    <span>-- Lorem ipsum dolor sit amet</span></p></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3"><img src="{{site.url}}/assets/images/placeholder_benefits.png"/></div>
+            <div class="col-12 col-lg-5 has--white-font">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                <span>-- Lorem ipsum dolor sit amet</span></p></div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row vel--use-cases">
+    {% for item in site.data.useCases %}
+    <div class="col-6 col-lg-4 card has--background-dark has--white-font has--white-headline">
+        <h5>{{item.title}}</h5>
+        <p>{{item.info}}</p>
+        <div class="col-12 vel--link">
+            <button type="button" class="btn has--white-link has--underline">
+             <a href="{{item.link}}">Read more</a>
+            </button>
+        </div>
+    </div>
+    {% endfor %}
+</div>

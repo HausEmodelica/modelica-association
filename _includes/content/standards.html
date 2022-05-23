@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-12 vel--title has--white-headline is--uppercase">
+        <h2>Modelica Association Standards</h2>
+    </div>
+</div>
+<div class="row">
+    {% for item in site.data.standards %}
+        <div class="col-6 col-lg-4">
+            <div class="card has--background-dark">
+                <img src="{{site.url}}{{item.logo}}" class="card-img-top" alt="">
+                <div class="card-body has--white-headline has--white-font is--centered">
+                    <h4 class="card-title">{{item.name}}</h4>
+                    <p class="card-text">{{item.info}}</p>
+                    <button type="button" class="btn is--uppercase-link has--white-link">
+                        <a href="{{item.link}}">More about {{item.name}}</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

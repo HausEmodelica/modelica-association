@@ -1,0 +1,35 @@
+    <div class="row">
+        <div class="col-12 vel--title has--red-headline">
+            <h2>News and Events</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6 vel--news">
+            {% for news in site.categories.news reversed%}
+                <div class="row vel--entry has--white-headline">
+                    <time class="col-12 col-lg-3 vel--date has--background-red">
+                        <h5>{{news.date | date: "%b %-d, %Y" }}</h5>
+                    </time>
+                   <div class="col-12 col-lg-9 vel--info">
+                       <a href="{{site.url}}{{ post.url }}"><h6>{{news.excerpt}}</h6></a>
+                   </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-12 col-lg-6 vel--events">
+            {% for event in site.categories.events reversed %}
+                    <div class="row vel--entry has--white-headline">
+                            <time class="col-12 col-lg-3 vel--date has--background-dark">
+                                <h5>{{event.date | date: "%b %-d, %Y" }}</h5>
+                            </time>
+                            <div class="col-12 col-lg-9 vel--info">
+                                <a href="{{site.url}}{{ event.url }}"><h6>{{ event.excerpt }}</h6></a>
+                            </div>
+                    </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
