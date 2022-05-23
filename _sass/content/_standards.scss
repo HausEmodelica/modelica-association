@@ -1,0 +1,48 @@
+/* ------------------- STANDARDS ------------------- */
+.standards{
+  /*margin-top:0 !important;
+  background: #333F48;
+  color:white;
+  padding:7.81rem 10rem;*/
+  .title{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+   // font-style: $font-normal;
+    font-size: 3rem;
+    //font-weight: $font-bold;
+    text-transform: uppercase;*/
+  }
+  .card{
+    /* background: #333F48;
+     color:white;
+     padding: 0.53rem 1.06rem 0.53rem 1.06rem;*/
+    img{
+      // padding: 5.63rem 8.75rem;
+    }
+    .card-title{
+      /*font-style: $font-normal;
+      font-size: 2rem;
+      //font-weight: $font-bold;
+      text-align: center;*/
+    }
+    .card-text{
+      /* font-size: 1.13rem;
+       text-align: left;*/
+    }
+    .btn{
+      /*color:white;
+      font-size: 1.13rem;
+      text-transform: uppercase;
+      //font-weight: $font-bold;
+      text-align:left;
+      padding: 0.94rem 0 1.63rem 0 !important;*/
+      &::after{
+        content: ">";
+        color: #C41933;
+        padding-left:0.31rem;
+      }
+    }
+  }
+}

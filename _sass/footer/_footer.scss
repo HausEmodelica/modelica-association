@@ -1,0 +1,16 @@
+/* ------------------- FOOTER ------------------- */
+footer{
+  .hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .vr{
+    color:$white;
+    opacity: 1;
+    height:$font-size-base;
+    width: 2px;
+    align-self: center;
+  }
+}

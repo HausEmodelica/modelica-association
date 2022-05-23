@@ -1,0 +1,22 @@
+/* ------------------- NAVIGATION ------------------- */
+
+.navbar-brand{
+  //padding: 0.88rem 13.38rem 1.75rem 8.69rem !important;
+}
+.navbar-nav{
+  /*font-weight: $font-regular;
+  font-style: $font-normal;
+  font-size: 1.13rem;*/
+
+  .nav-item{
+    //padding: 0 1.56rem 0 1.56rem;
+    a{
+      &:hover{
+        //color:#C8102E !important;
+      }
+    }
+    .current-active{
+      //color:#C8102E !important;
+    }
+  }
+}
