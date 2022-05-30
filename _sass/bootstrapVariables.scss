@@ -210,7 +210,7 @@ $spacers: (
         10: $spacer * $vel-space-10,
         11: $spacer * $vel-space-11,
 ) !default;
-
+$enable-negative-margins: true;
 //-----------------------------------------------
 //
 // typography

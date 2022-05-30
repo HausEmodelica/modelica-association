@@ -1,21 +1,27 @@
-<div class="row">
-    <div class="col-12 vel--title has--white-headline is--uppercase">
+<div class="row mb-5">
+    <div class="col-12 vel--title has--white-headline is--uppercase is--centered">
         <h2>Modelica Association Standards</h2>
     </div>
 </div>
 <div class="row">
     {% for item in site.data.standards %}
-        <div class="col-6 col-lg-4">
-            <div class="card has--background-dark">
-                <img src="{{site.url}}{{item.logo}}" class="card-img-top" alt="">
-                <div class="card-body has--white-headline has--white-font is--centered">
-                    <h4 class="card-title">{{item.name}}</h4>
-                    <p class="card-text">{{item.info}}</p>
-                    <button type="button" class="btn is--uppercase-link has--white-link">
-                        <a href="{{item.link}}">More about {{item.name}}</a>
-                    </button>
+    <div class="col-6 col-lg-4">
+        <div class="card has--background-dark has--light-border mt-3">
+            <div class="card-img-top px-10 py-8 mx-2 mt-n2 has--background-dark has--box-shadow">
+                <img src="{{site.url}}{{item.logo}}" class="p-2" alt="">
+            </div>
+            <div class="card-body px-5 pb-5 pt-4">
+                <div class="card-title has--white-headline is--centered mb-2">
+                    <h4>{{item.name}}</h4>
                 </div>
+                <div class="card-text has--white-font mb-2">
+                    <p>{{item.info}}</p>
+                </div>
+                <button type="button" class="btn is--uppercase-link has--white-link">
+                    <a href="{{item.link}}">More about {{item.name}}</a>
+                </button>
             </div>
         </div>
+    </div>
     {% endfor %}
 </div>
