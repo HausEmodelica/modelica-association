@@ -1,16 +1,28 @@
 /* ------------------- FOOTER ------------------- */
-footer{
+footer {
   .hstack {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .vr{
-    color:$white;
+
+  .vr {
+    color: $white;
     opacity: 1;
-    height:$font-size-base;
+    height: $font-size-base;
     width: 2px;
     align-self: center;
   }
+
+  .vel--icon {
+    color: #C61633;
+    z-index: 1;
+    font-size: 1.63rem;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
 }
