@@ -1,48 +1,21 @@
 .news-and-events {
-  /*
-  padding: 6.56rem 17.38rem 7.81rem 17.38rem;
-  margin-top:-2rem!important;
-  color:#333F48;*/
-  a {
-    //text-decoration: none;
+  .vel--entry time {
+    padding-left: 1.56rem;
+    padding-right: 1.56rem;
+    max-width: 8.75rem;
+    max-height: 8.13rem;
   }
-
-  .title {
-    /* padding-bottom: 4.38rem;
-     font-size: 3rem;
-     //font-weight: $font-bold;
-     text-align: center;
-     color: #C8102E;*/
-  }
-
-  .entry {
-    /*margin-bottom:10px;
-    padding:5px;
-    position: relative;*/
-  }
-
-  .date {
-    /* padding: 30px;
-     color:white;
-     //font-weight: $font-bold;
-     font-size: 1.5rem;
-     text-align: center;
-     text-decoration: none;*/
-  }
-
-  .info {
-    /*font-size: 1.38rem;
-    color: #333F48;
-    padding: 25px;
-    max-lines: 3;
+  .vel--info {
     display: flex;
     align-items: center;
-    justify-content: flex-start;*/
+    flex-direction: row;
+    align-content: center;
+    position: relative;
     &::after {
       content: '>';
       position: absolute;
-      right: 15px;
-      bottom: 10px;
+      right:-5px;
+      bottom:5px;
     }
   }
 }

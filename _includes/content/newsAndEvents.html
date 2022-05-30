@@ -1,5 +1,5 @@
     <div class="row">
-        <div class="col-12 vel--title has--red-headline">
+        <div class="col-12 vel--title has--red-headline is--centered mb-7">
             <h2>News and Events</h2>
         </div>
     </div>
@@ -7,11 +7,11 @@
     <div class="row">
         <div class="col-12 col-lg-6 vel--news">
             {% for news in site.categories.news reversed%}
-                <div class="row vel--entry has--white-headline">
-                    <time class="col-12 col-lg-3 vel--date has--background-red">
+                <div class="row vel--entry has--white-headline has--lightred-border mb-1 me-4">
+                    <time class="col-12 col-lg-3 vel--date has--background-red is--centered py-3 ">
                         <h5>{{news.date | date: "%b %-d, %Y" }}</h5>
                     </time>
-                   <div class="col-12 col-lg-9 vel--info">
+                   <div class="col-12 col-lg-9 vel--info ps-3 pe-5">
                        <a href="{{site.url}}{{ post.url }}"><h6>{{news.excerpt}}</h6></a>
                    </div>
                 </div>
@@ -20,11 +20,11 @@
 
         <div class="col-12 col-lg-6 vel--events">
             {% for event in site.categories.events reversed %}
-                    <div class="row vel--entry has--white-headline">
-                            <time class="col-12 col-lg-3 vel--date has--background-dark">
+                    <div class="row vel--entry has--white-headline has--dark-border mb-1 ms-4">
+                            <time class="col-12 col-lg-3 vel--date has--background-dark is--centered py-3">
                                 <h5>{{event.date | date: "%b %-d, %Y" }}</h5>
                             </time>
-                            <div class="col-12 col-lg-9 vel--info">
+                            <div class="col-12 col-lg-9 vel--info ps-3 pe-5">
                                 <a href="{{site.url}}{{ event.url }}"><h6>{{ event.excerpt }}</h6></a>
                             </div>
                     </div>
