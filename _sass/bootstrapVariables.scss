@@ -68,13 +68,16 @@ $transition-transform-fast: transform 0.3s;
 
 // veljus spacing steps (for margins and paddings etc.)
 $vel-space-1:               0.5;
-$vel-space-2:               1.125;
-$vel-space-3:               2;
-$vel-space-4:               2.25;
-$vel-space-5:               3.125;
-$vel-space-6:               4.6875;
-$vel-space-7:               6.25;
-$vel-space-8:               7.5;
+$vel-space-2:               1;
+$vel-space-3:               2.19;
+$vel-space-4:               2.5;
+$vel-space-5:               3.13;
+$vel-space-6:               3.75;
+$vel-space-7:               4.38;
+$vel-space-8:               5;
+$vel-space-9:               6.25;
+$vel-space-10:               7.5;
+$vel-space-11:               10.63;
 
 // padding-sets
 $theme-padding-1:           $vel-space-1 + rem;
@@ -85,6 +88,9 @@ $theme-padding-5:           $vel-space-5 + rem;
 $theme-padding-6:           $vel-space-6 + rem;
 $theme-padding-7:           $vel-space-7 + rem;
 $theme-padding-8:           $vel-space-8 + rem;
+$theme-padding-9:           $vel-space-9 + rem;
+$theme-padding-10:          $vel-space-10 + rem;
+$theme-padding-11:          $vel-space-11 + rem;
 
 // margin-sets
 $theme-margin-1:            $vel-space-1 + rem;
@@ -95,6 +101,9 @@ $theme-margin-5:            $vel-space-5 + rem;
 $theme-margin-6:            $vel-space-6 + rem;
 $theme-margin-7:            $vel-space-7 + rem;
 $theme-margin-8:            $vel-space-8 + rem;
+$theme-margin-9:            $vel-space-9 + rem;
+$theme-margin-10:           $vel-space-10 + rem;
+$theme-margin-11:           $vel-space-11 + rem;
 
 // border-radius
 $border-radius-std:         15px;
@@ -180,6 +189,9 @@ $spacers: (
         6: $spacer * $vel-space-6,
         7: $spacer * $vel-space-7,
         8: $spacer * $vel-space-8,
+        9: $spacer * $vel-space-9,
+        10: $spacer * $vel-space-10,
+        11: $spacer * $vel-space-11,
 ) !default;
 
 //-----------------------------------------------

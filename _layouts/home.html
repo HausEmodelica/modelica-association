@@ -13,18 +13,18 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg is--container-wide">
+    <nav class="navbar navbar-expand-lg is--container-medium">
         <div class="container">
             {% include header/navigation.html %}
         </div>
     </nav>
-    <div class="container header-image is--container-wide">
+    <div class="container-fluid">
         {% include header/header.html %}
     </div>
 </header>
 <main>
-    <div class="vel--section news-and-events has--background-light vel--no-gutter">
-        <div class="container is--container-small">
+    <div class="vel--section news-and-events has--background-light vel--no-gutter pt-7 pb-10">
+        <div class="container is--container-small ">
             {% include content/newsAndEvents.html %}
         </div>
     </div>
@@ -70,7 +70,7 @@
     </div>
 </main>
 <footer>
-    <div class="container">
+    <div class="container is--container-medium pt-7 pb-5">
         {% include footer/footer.html %}
     </div>
 </footer>
