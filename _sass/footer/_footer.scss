@@ -1,10 +1,7 @@
 /* ------------------- FOOTER ------------------- */
 footer {
   .hstack {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flex-rules(center, normal, center, normal, row);
   }
 
   .vr {
@@ -12,17 +9,16 @@ footer {
     opacity: 1;
     height: $font-size-base;
     width: 2px;
-    align-self: center;
+    @include flex-rules(normal, normal, normal, center, row);
   }
 
   .vel--icon {
-    color: #C61633;
+    color: $theme-red-c8;
     z-index: 1;
-    font-size: 1.63rem;
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
+    font-size: 1.63rem; //todo: change to height when the icon is usable "font-size * spacer4"
+    @include flex-rules(flex-end, center, center, normal, row);
   }
-
+  .vel--footer-title{
+    @include flex-rules(flex-end, center, center, normal, row);
+  }
 }
