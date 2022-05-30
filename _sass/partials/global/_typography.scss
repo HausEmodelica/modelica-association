@@ -17,9 +17,18 @@
     text-align: center;
   }
 }
+.is--right{
+  p{
+    text-align: right;
+  }
+}
 .is--bold{
   font-weight: $font-weight-bold;
+  p{
+    font-weight: $font-weight-bold;
+  }
+
 }
-h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6, p{
   margin-bottom: 0;
 }

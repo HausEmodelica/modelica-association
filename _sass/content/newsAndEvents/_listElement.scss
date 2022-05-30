@@ -6,10 +6,7 @@
     max-height: 8.13rem;
   }
   .vel--info {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
+  @include flex-rules(normal, center, center, normal, row);
     position: relative;
     &::after {
       content: '>';

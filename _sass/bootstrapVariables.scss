@@ -136,6 +136,22 @@ $component-active-bg:       $tertiary !default;
 
 //-----------------------------------------------
 //
+// flexbox
+//
+//-----------------------------------------------
+
+@mixin flex-rules($justify-content, $align-content, $align-items, $align-self, $flex-direction){
+  display: flex;
+  justify-content: $justify-content;
+  align-content: $align-content;
+  align-items: $align-items;
+  align-self : $align-self;
+  flex-direction: $flex-direction;
+}
+
+
+//-----------------------------------------------
+//
 // border
 //
 //-----------------------------------------------
@@ -167,10 +183,11 @@ $grid-gutter-width: 1rem !default;
 //
 //-----------------------------------------------
 
-$border-radius:               0 !default;
-$border-radius-sm:            0 !default;
-$border-radius-lg:            0 !default;
+$border-radius:               4px !default;
+$border-radius-sm:            4px !default;
+$border-radius-lg:            4px !default;
 $border-radius-pill:          0 !default;
+
 
 //-----------------------------------------------
 //
@@ -270,7 +287,21 @@ $link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
+
+
 //-----------------------------------------------
+//
+// hr
+//
+//-----------------------------------------------
+
+$hr-margin-y:                 0 !default;
+$hr-color:                    $white !default;
+$hr-border-color:             $white !default; // Allows for inherited colors
+$hr-opacity:                  1 !default;
+$hr-border-width:             1px !default;
+
+  //-----------------------------------------------
 //
 // forms & buttons
 //
