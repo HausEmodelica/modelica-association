@@ -232,6 +232,8 @@ $font-weight-bolder:            900 !default;
 $font-weight-base:              $font-weight-light !default;
 $line-height-base:              1.5 !default;
 
+$paragraph-margin-bottom:       0 !default;
+
 $h1-font-size:                  $font-size-base * 3 !default;
 $h2-font-size:                  $font-size-base * 3 !default;
 $h3-font-size:                  $font-size-base * 2.38 !default;
@@ -249,9 +251,9 @@ $h4-font-size-sm:               $font-size-base * 1.25 !default;
 $h5-font-size-sm:               $font-size-base * 1.25 !default;
 $h6-font-size-sm:               $font-size-base * 1.25 !default;
 
-$headings-margin-bottom:        0.45em !default;
+$headings-margin-bottom:        0 !default;
 $headings-font-family:          europa, Arial, sans-serif !default;
-$headings-font-weight:          400 !default;
+$headings-font-weight:          $font-weight-bold !default;
 $headings-line-height:          1.2 !default;
 $headings-color:                null !default;
 

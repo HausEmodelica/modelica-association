@@ -1,19 +1,24 @@
 <div class="row">
-    <div class="col-12 vel--title has--red-headline is--centered mt-9 mb-5">
+    <div class="col-12 vel--title has--red-headline text-center mb-5">
         <h2>Services</h2>
     </div>
 </div>
 <div class="row">
     {% for item in site.data.services %}
     <div class="col-6 col-lg-3">
-        <div class="col-12 vel--service-card has--lightred-border px-5 py-6">
+        <div class="card vel--service-card has--lightred-border px-5 py-6">
             <div class="row">
-                <div class="col-12 vel--icon mb-2">
-                    <img src="{{site.url}}{{item.icon}}" alt="">
+                <div class="col-6 col-lg-8 col-xxl-6 mb-2 mx-auto">
+                    <figure>
+                        <picture>
+                            <source srcset="{{site.url}}{{item.icon}}">
+                            <img src="{{site.url}}{{item.icon}}" alt="">
+                        </picture>
+                    </figure>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 vel--item-title is--centered my-2">
+                <div class="col-12 vel--item-title text-center my-2">
                     <h3>{{item.title}}</h3>
                 </div>
             </div>
@@ -24,9 +29,7 @@
             </div>
             <div class="row">
                 <div class="col-12 vel--link d-grid">
-                    <button type="button" class="btn is--centered-link has--underline">
-                        <a href="{{item.link}}">More</a>
-                    </button>
+                    <a href="{{item.link}}" class="btn text-center text-decoration-underline">More</a>
                 </div>
             </div>
 

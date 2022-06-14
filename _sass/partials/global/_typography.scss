@@ -2,33 +2,16 @@
   color: $theme-red-c8;
 }
 .has--white-headline {
-  h2, h4, h5 {
+  h2, h3, h4, h5 {
     color: $white;
   }
 }
-.has--white-font p{
+.has--white-font{
   color:$white;
 }
-.is--uppercase h2 {
-  text-transform: uppercase;
-}
-.is--centered {
-  h2, h3, h4, h5, p{
-    text-align: center;
-  }
-}
-.is--right{
-  p{
-    text-align: right;
-  }
-}
-.is--bold{
-  font-weight: $font-weight-bold;
-  p{
-    font-weight: $font-weight-bold;
-  }
 
-}
-h2, h3, h4, h5, h6, p{
-  margin-bottom: 0;
+.form-floating > label{
+  height:auto;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
 }

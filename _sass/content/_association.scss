@@ -1,0 +1,9 @@
+.associations{
+  .btn {
+    &::after {
+      content: ">";
+      color: #C41933;
+      padding-left: 0.31rem;
+    }
+  }
+}

@@ -8,11 +8,8 @@
   .vel--info {
   @include flex-rules(normal, center, center, normal, row);
     position: relative;
-    &::after {
-      content: '>';
-      position: absolute;
-      right:-5px;
-      bottom:5px;
+    h6{
+      font-weight: $font-weight-normal;
     }
   }
 }

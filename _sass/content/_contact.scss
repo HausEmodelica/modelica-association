@@ -1,0 +1,22 @@
+.contact {
+  background-image: url("https://c-papabechtelou.github.io/first-template/assets/images/gettyimages-82214615-2048x2048.png");
+
+  .form-check {
+    @include flex-rules(normal, center, center, normal, row);
+
+    .form-check-input {
+      width: 30px;
+      height: 30px;
+      @include flex-rules(center, center, center, normal, row);
+
+      &:checked {
+        background-color: $white;
+      }
+    }
+    input[type=checkbox]:checked:after {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='' class='bi bi-circle-fill' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8'/%3E%3C/svg%3E");
+      height: 18px;
+      filter: invert(14%) sepia(86%) saturate(4313%) hue-rotate(342deg) brightness(83%) contrast(99%);
+    }
+  }
+}

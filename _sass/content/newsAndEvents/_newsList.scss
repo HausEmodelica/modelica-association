@@ -1,0 +1,8 @@
+.vel--info {
+  &::after {
+    content: url(https://c-papabechtelou.github.io/first-template/assets/images/icons/icon_downloads--red.svg);
+    position: absolute;
+    right: -5px;
+    bottom: 5px;
+  }
+}
