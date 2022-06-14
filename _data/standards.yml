@@ -1,24 +1,24 @@
 - name: Modelica Language
-  logo: /assets/images/modelica_lang.svg
+  logo: /assets/images/logos/logos_modelica-lang--white.svg
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
 - name: Modelica Libraries
-  logo: /assets/images/modelica_lang.svg
+  logo: /assets/images/logos/logos_modelica-lib--white.svg
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
 - name: SSP
-  logo: /assets/images/modelica_lang.svg
+  logo: /assets/images/logos/logos_ssp-std--white.svg
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
 - name: FMI
-  logo: /assets/images/modelica_lang.svg
+  logo: /assets/images/logos/logos_fmi-std--white.svg
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
 - name: eFMI
-  logo: /assets/images/modelica_lang.svg
+  logo: /assets/images/logos/logos_efmi-std--white.svg
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
 - name: DCP
-  logo: /assets/images/modelica_lang.svg
+  logo: /assets/images/logos/logos_dcp-std--white.svg
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
