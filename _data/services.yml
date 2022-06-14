@@ -1,16 +1,16 @@
-- icon: /assets/images/service_icon.png
+- icon: /assets/images/icons/n_education--red.svg
   title: Education
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
-- icon: /assets/images/service_icon.png
+- icon: /assets/images/icons/n_training--red.svg
   title: Training
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
-- icon: /assets/images/service_icon.png
+- icon: /assets/images/icons/n_consulting--red.svg
   title: Consulting
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
-- icon: /assets/images/service_icon.png
+- icon: /assets/images/icons/n_downloads--red.svg
   title: Downloads
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
