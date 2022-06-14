@@ -1,5 +1,16 @@
-.benefits{
-  .vel--quotes-text{
+.benefits {
+  .vel--quotes-text {
     @include flex-rules(center, normal, normal, normal, column);
+  }
+
+  .vel--quotes-image{
+    position: relative;
+    figure::after {
+      position: absolute;
+      top:3rem;
+      right: 0;
+      width: 3rem;
+      content: url("https://c-papabechtelou.github.io/first-template/assets/images/icons/icon_quotemark--white.svg");
+    }
   }
 }

@@ -5,11 +5,20 @@
     max-width: 8.75rem;
     max-height: 8.13rem;
   }
+
   .vel--info {
-  @include flex-rules(normal, center, center, normal, row);
+    @include flex-rules(normal, center, center, normal, row);
     position: relative;
-    h6{
+
+    h6 {
       font-weight: $font-weight-normal;
+    }
+
+    &::after {
+      content: url("https://c-papabechtelou.github.io/first-template/assets/images/icons/n_chevron-right--red.svg");
+      position: absolute;
+      right: -5px;
+      bottom: 5px;
     }
   }
 }

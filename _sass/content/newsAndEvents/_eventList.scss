@@ -1,12 +1,5 @@
-/* ------------------- EVENTS LIST ------------------- */
-.events{
-  .entry{
-    //border: 1px solid rgba(52, 63, 72, .2);
-  }
-  .date{
-    //background: #333F48;
-  }
-  .info::after{
-    //color:#343F48;
+.vel--info {
+  &::after {
+    filter: invert(18%) sepia(4%) saturate(2916%) hue-rotate(165deg) brightness(98%) contrast(81%);
   }
 }

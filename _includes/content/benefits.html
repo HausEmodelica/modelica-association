@@ -27,8 +27,8 @@
             <div class="col-12 col-lg-3 ps-5 vel--quotes-image me-2">
                 <figure>
                     <picture>
-                        <source srcset="{{site.url}}/assets/images/placeholder_benefits.png">
-                        <img src="{{site.url}}/assets/images/placeholder_benefits.png">
+                        <source srcset="{{site.url}}/assets/images/images/example-quote-person-a--223x223.jpg">
+                        <img src="{{site.url}}/assets/images/images/example-quote-person-a--223x223.jpg" class="rounded-circle">
                     </picture>
                 </figure>
             </div>
@@ -43,8 +43,8 @@
             <div class="col-12 col-lg-3 vel--quotes-image ps-5 me-1">
                 <figure>
                     <picture>
-                        <source srcset="{{site.url}}/assets/images/placeholder_benefits.png">
-                        <img src="{{site.url}}/assets/images/placeholder_benefits.png">
+                        <source srcset="{{site.url}}/assets/images/images/example-quote-person-b--223x223.jpg">
+                        <img src="{{site.url}}/assets/images/images/example-quote-person-b--223x223.jpg" class="rounded-circle">
                     </picture>
                 </figure>
             </div>
@@ -62,7 +62,7 @@
 <div class="row vel--use-cases mt-10">
     {% for item in site.data.useCases %}
     <div class="col-6 col-lg-4">
-        <div class="card has--background-dark has--white-font has--white-headline py-7 px-6">
+        <div class="card has--background-dark has--white-font has--white-headline py-7 px-6 h-100">
             <div class="card-title text-center mb-2"><h3>{{item.title}}</h3></div>
             <div class="card-text mb-2"><p>{{item.info}}</p></div>
             <div class="col-12 vel--link mt-1">
