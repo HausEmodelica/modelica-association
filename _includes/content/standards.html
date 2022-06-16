@@ -28,7 +28,30 @@
                 <div class="card-text has--white-font mb-2">
                     <p>{{item.info}}</p>
                 </div>
-                <a class="btn text-uppercase has--white-font" href="{{item.link}}">More about {{item.name}}</a>
+                <button type="button" class="btn text-uppercase has--white-font" data-bs-toggle="modal"
+                        data-bs-target="#{{item.link}}">More about {{item.name}}
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="{{item.link}}" tabindex="-1" aria-labelledby="modalStandardTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStandardTitle">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hello
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">TO {{item.name}} SITE</button>
+                </div>
             </div>
         </div>
     </div>
