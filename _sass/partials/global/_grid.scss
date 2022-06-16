@@ -15,7 +15,7 @@
   }
   &.is--container-small {
     @include media-breakpoint-up(xl) {
-      max-width: 640px;
+      max-width: 840px;
     }
     @include media-breakpoint-up(xxl) {
       max-width: 840px;

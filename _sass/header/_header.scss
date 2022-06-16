@@ -1,6 +1,9 @@
 header{
   .vel--header-overlay{
-    margin-top: -16.56rem;
+    @include media-breakpoint-up(lg) {
+      margin-top: -16.56rem;
+    }
+
     .vel--title{
       span{
         font-weight: $font-weight-normal;

@@ -1,9 +1,7 @@
 .services {
-  .vel--icon {
-    @include flex-rules(center, normal, center, normal, row);
-
-    img {
-      width: 4.25rem;
-    }
+.card-img-top{
+  img{
+    max-height: 2.5rem;
   }
+}
 }

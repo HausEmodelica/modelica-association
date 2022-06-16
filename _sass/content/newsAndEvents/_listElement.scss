@@ -1,24 +1,27 @@
 .news-and-events {
-  .vel--entry time {
-    padding-left: 1.56rem;
-    padding-right: 1.56rem;
-    max-width: 8.75rem;
-    max-height: 8.13rem;
+  .vel--entry {
+    time {
+      padding-left: 1.56rem;
+      padding-right: 1.56rem;
+
+      h5{
+        line-height: 1.94rem;
+      }
+    }
+
   }
 
   .vel--info {
-    @include flex-rules(normal, center, center, normal, row);
-    position: relative;
-
+    @include flex-rules(normal, center, center, center, row);
     h6 {
       font-weight: $font-weight-normal;
     }
-
+  }
+  .vel--icon{
+    @include flex-rules(flex-end, normal, flex-end, normal, row);
     &::after {
-      content: url("https://c-papabechtelou.github.io/first-template/assets/images/icons/n_chevron-right--red.svg");
-      position: absolute;
-      right: -5px;
-      bottom: 5px;
+      content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Ebene_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 16'%3E%3Cpath id='Pfad_13' d='M1.147,1.047l6.966,6.872L1.147,14.953' fill='none' stroke='%23c61633' stroke-width='2'/%3E%3C/svg%3E");;
+      width: 14px;
     }
   }
 }

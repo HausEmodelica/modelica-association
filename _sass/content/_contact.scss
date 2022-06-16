@@ -1,6 +1,6 @@
 .contact {
   background-image: url("https://c-papabechtelou.github.io/first-template/assets/images/images/example-bg-contact--1920x758.jpg");
-
+  background-size: cover;
   .form-check {
     @include flex-rules(normal, center, center, normal, row);
 
