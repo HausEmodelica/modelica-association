@@ -15,7 +15,14 @@
 .form-floating > label {
   height: auto;
   font-weight: $font-weight-normal;
-  font-size: $font-size-base;
+  font-size: $font-size-lg;
+}
+.has--two-columns{
+  column-count: 2;
+  column-gap: 2rem;
+  @include media-breakpoint-down(md) {
+    column-count: 1;
+  }
 }
 
 @include media-breakpoint-up(sm) {
@@ -37,7 +44,7 @@
   h6, .h6 {
     @include font-size($h6-font-size-sm);
   }
-  p {
+  p, .nav-link {
     @include font-size($font-size-sm);
   }
 
@@ -62,7 +69,7 @@
   h6, .h6 {
     @include font-size($h6-font-size-lg);
   }
-  p {
+  p, .nav-link {
     @include font-size($font-size-lg);
   }
 }
@@ -86,7 +93,7 @@
   h6, .h6 {
     @include font-size($h6-font-size-xxxl);
   }
-  p {
+  p, .nav-link {
     @include font-size($font-size-xxxl);
   }
 

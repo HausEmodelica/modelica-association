@@ -15,6 +15,10 @@
     @include flex-rules(normal, center, center, center, row);
     h6 {
       font-weight: $font-weight-normal;
+      p{
+        font-size: inherit;
+        font-weight: inherit;
+      }
     }
   }
   .vel--icon{

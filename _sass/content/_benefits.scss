@@ -13,4 +13,7 @@
       content: url("https://c-papabechtelou.github.io/first-template/assets/images/icons/n_quotemark--white.svg");
     }
   }
+  .vel--use-cases{
+      @include flex-rules(center, normal, normal, normal, row);
+  }
 }

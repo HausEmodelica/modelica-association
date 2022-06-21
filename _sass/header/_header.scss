@@ -1,8 +1,21 @@
 header{
   .vel--header-overlay{
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
+      margin-top: -10.56rem;
+    }
+    @include media-breakpoint-only(lg) {
       margin-top: -16.56rem;
     }
+    @include media-breakpoint-only(xl) {
+      margin-top: -16.56rem;
+    }
+    @include media-breakpoint-only(xxl) {
+      margin-top: -16.56rem;
+    }
+    @include media-breakpoint-only(xxxl) {
+      margin-top: -16.56rem;
+    }
+      margin-top: -19.56rem;
 
     .vel--title{
       span{
