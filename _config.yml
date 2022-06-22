@@ -9,6 +9,11 @@ defaults:
       path: ""
     values:
       layout: "home"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 plugins:
   - jekyll-feed
