@@ -1,5 +1,3 @@
-url: hausemodelica.github.io/first-template
-
 collections:
   events:
     output: true
