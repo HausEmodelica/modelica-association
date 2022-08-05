@@ -1,3 +1,5 @@
+url: modelica-association
+
 collections:
   events:
     output: true
