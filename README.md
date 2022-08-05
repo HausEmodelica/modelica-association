@@ -1,1 +1,1 @@
-# first-template
+# modelica-association template
