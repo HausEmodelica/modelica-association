@@ -1,0 +1,26 @@
+// 
+/*
+ * adobe font set - local integration not possible
+ * included in home.html -> https://use.typekit.net/jqt8mfo.css
+ */
+ @font-face {
+    font-family: 'Europa-1';
+    src: url('../fonts/Europa-Regular.woff2') format('woff2'),
+        url('../fonts/Europa-Regular.woff') format('woff'),
+        url('../fonts/Europa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Europa-1';
+    src: url('../fonts/Europa-Bold.woff2') format('woff2'),
+        url('../fonts/Europa-Bold.woff') format('woff'),
+        url('../fonts/Europa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
