@@ -55,6 +55,11 @@
             </div>
         </header>
         <main>
+            <div class="vel--section" style="background:silver; padding: 4rem 0;">
+                {% for news in site.categories.news reversed%}
+                    {{news.title}}
+                {% endfor %}
+            </div>
             <div class="vel--section news-and-events has--background-light pt-7 pb-10">
                 <div class="container is--container-small px-2">
                     {% include content/newsAndEvents.html %}

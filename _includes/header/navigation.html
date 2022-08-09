@@ -1,11 +1,7 @@
-<a class="navbar-brand me-lg-6 me-xxl-8 me-xxxl-10 ms-2 my-2 col-3 col-lg-auto" href="#">
-    <figure>
-        <picture>
-            <source srcset="{{site.url}}/assets/images/logos/n_modelica-ass--color.svg">
-            <img src="{{ site.url }}/assets/images/logos/n_modelica-ass--color.svg" />
-        </picture>
-    </figure>
+<a class="navbar-brand" href="/">
+    {% include image.html file="brand/n_modelica-ass--color.svg" alt="Modelica Homepage" class="test-class" %}
 </a>
+{% include image.html file="brand/n_modelica-ass--color.svg" url="https://www.veljus.de" urltitle="Linktitel" alt="Jekyll" link="" %}
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon">
         <figure>
@@ -25,10 +21,13 @@
             {% assign nodes = site.html_pages | sort: "order" %}
             {% assign itemurl = item.url | remove: '/' %}
 
-            <ul>
+            <ul class="dropdown-menu">
+                <span class="dropdown-toggle d-xl-none" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
             {% for node in nodes %}
                 {% if node.parent == itemurl %}
-                    <li><a href="{{node.url}}">{{node.title}}</a></li>
+                    <li>
+                        <a class="dropdown-item" href="{{node.url}}">{{node.title}}</a>
+                    </li>
                 {% endif %}
             {% endfor %}
             </ul>

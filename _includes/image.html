@@ -1,0 +1,12 @@
+<figure>
+    {% if {{include.url}} %}<a href="{{include.url}}" title="{{urltitle}}">{% endif %}
+    <picture>
+        <source srcset="" media="(min-width: 992px)">
+        <source srcset="" media="(min-width: 768px)">
+        <img class="{{include.class}}" src="images/{{include.file}}" alt="{{include.alt}}" {% if {{include.max-width}} %}style="max-width: {{include.max-width}}px"{% endif %} />
+        {% if {{include.caption}} %}
+            <figcaption>{{include.caption}}</figcaption>
+        {% endif %}
+    </picture>
+    {% if {{include.url}} %}</a>{% endif %}
+</figure>
