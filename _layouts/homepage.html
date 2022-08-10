@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
         {% feed_meta %}
         {% seo %}
         {% if jekyll.environment == "production" %}
@@ -15,11 +15,9 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg is--container-medium">
-                <div class="container">
-                    {% include header/navigation.html %}
-                </div>
-            </nav>
+
+            {% include header/mainnavigation.html %}
+
             <div class="container-fluid p-0">
                 <div class="row mx-0">
                     <div class="col-12 header-image p-0">
@@ -36,10 +34,10 @@
                                 <div class="col-12 vel--overlay-headline">
                                     <div class="row">
                                         <div class="col-12 vel--title m-0">
-                                            <h2>
+                                            <h1 class="h2">
                                                 {{page.headline1}}
                                                 <span>{{page.headline2}}</span>
-                                            </h2>
+                                            </h1>
                                         </div>
                                     </div>
                                 </div>
@@ -55,26 +53,44 @@
             </div>
         </header>
         <main>
-            <div class="vel--section" style="background:silver; padding: 4rem 0;">
-                {% for news in site.categories.news reversed%}
-                    {{news.title}}
-                {% endfor %}
-            </div>
+
             <div class="vel--section news-and-events has--background-light pt-7 pb-10">
                 <div class="container is--container-small px-2">
                     {% include content/newsAndEvents.html %}
                 </div>
             </div>
-            <div class="vel--section standards has--background-dark py-10">
-                <div class="container is--container-medium">
-                    {% include content/standards.html %}
-                </div>
-            </div>
-            <div class="vel--section services  pt-9 pb-10">
-                <div class="container is--container-medium">
-                    {% include content/services.html %}
-                </div>
-            </div>
+
+            {% comment %}
+            #################################################
+            # Include Block
+            # List of modelica standards
+            #
+            # @Data: _data/standards.yml
+            #
+            # @Optional: headline | hclass
+            # @Requires: -
+            # @Requires if: htype if headline
+            #################################################
+            {% endcomment %}
+
+            {% include content/standards.html headline="Modelica Association Standards" htype="div" hclass="h2" %}
+
+            {% comment %}
+            #################################################
+            # Include Block
+            # List of modelica services
+            #
+            # @Data: _data/services.yml
+            #
+            # @Optional: headline | hclass
+            # @Requires: -
+            # @Requires if: htype if headline
+            #################################################
+            {% endcomment %}
+
+            {% include content/services.html headline="Services" htype="h2" hclass="" %}
+
+
             <div class="vel--section become-a-member  py-9">
                 <div class="container is--container-medium">
                     {% include content/becomeMember.html %}
