@@ -1,0 +1,5 @@
+.navbar-brand {
+    @include media-breakpoint-up(lg) {
+        width: 215px;
+    }
+}
