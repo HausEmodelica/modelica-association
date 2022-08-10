@@ -1,6 +1,5 @@
 ---
 ---
-@import "BootstrapVariables";
-@import "Bootstrap/bootstrap";
-@import "Includes";
-@import "Fonts";
+@import "_BootstrapVariables.scss";
+@import 'Bootstrap/bootstrap.scss';
+@import "_Includes.scss"

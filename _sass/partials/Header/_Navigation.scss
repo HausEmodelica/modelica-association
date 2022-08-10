@@ -1,31 +1,105 @@
-header {
-  nav {
-    @include media-breakpoint-down(lg) {
-      .navbar-nav {
-        align-items: flex-end;
-      }
+.vel--mainnav {
+    @include media-breakpoint-up(xl) {
+        padding-top: 0.75rem;
+        padding-bottom: 1.5rem;
+    }
+    .navbar-collapse {
+        @include media-breakpoint-up(xl) {
+            position: relative;
+            top: 1rem;
+        }
+    }
+    .navbar-nav {
+        @include media-breakpoint-down(lg) {
+            align-items: flex-end;
+        }
+        @include media-breakpoint-up(xl) {
+            margin-left: auto;
 
-      .navbar-toggler-icon {
-        width: 2.5rem;
-        height: 2rem;
-      }
+            .navbar-collapse {
+                position: relative;
+                top: 0.75rem,
+            }
+            > .nav-item {
+                position: relative;
+
+                > .nav-link {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    position: relative;
+                    transition: color 0.3s;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0.375rem;
+                        height: 2px;
+                        width: calc(100% - 3rem);
+                        left: 1.5rem;
+                        background-color: $primary;
+                        transform: scale(0);
+                        transition: transform 0.3s;
+                    }
+                }
+
+                .dropdown-menu {
+                    border: none;
+                    border-radius: 0;
+                    left: -0.5rem;
+                    min-width: calc( 100% + 1rem);
+                    padding-top: 1.125rem;
+                    padding-bottom: 1.5rem;
+                    box-shadow: 3px 30px 30px rgba(0,0,0,0.15);
+
+                    .dropdown-item {
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        padding-top: 0.375rem;
+                        padding-bottom: 0.375rem;
+
+                        &:hover,
+                        &:focus {
+                            background-color: initial;
+                            color: $primary;
+                        }
+                    }
+                }
+
+                &:hover {
+                    > .nav-link {
+                        color: $primary;
+    
+                        &::after {
+                            transform: scale(1);
+                        }
+                    }
+                    .dropdown-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-toggler-icon {
+        @include media-breakpoint-down(lg) {
+            width: 2.5rem;
+            height: 2rem;
+        }
     }
 
-
     .collapse.show {
-      position: absolute;
-      width: 100%;
-      top: 4.75rem;
-      left: 0;
-      background: $white;
-      @include media-breakpoint-up(md) {
         position: absolute;
         width: 100%;
         top: 4.75rem;
         left: 0;
         background: $white;
-      }
-    }
-  }
-}
 
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            width: 100%;
+            top: 4.75rem;
+            left: 0;
+            background: $white;
+        }
+    }
+}
