@@ -1,16 +1,20 @@
 - icon: assets/images/icons/n_education--red.svg
+  iconalt: Alttext
   title: Education
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: /about/vision.html
 - icon: assets/images/icons/n_training--red.svg
+  iconalt: Alttext
   title: Training
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
 - icon: assets/images/icons/n_consulting--red.svg
+  iconalt: Alttext
   title: Consulting
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
 - icon: assets/images/icons/n_downloads--red.svg
+  iconalt: Alttext
   title: Downloads
   info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   link: #
