@@ -1,6 +1,6 @@
 ---
 title: Standards and Projects
-layout: default
+layout: default-hubpage
 url: standards-and-projects
 ---
 

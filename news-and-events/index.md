@@ -1,6 +1,6 @@
 ---
 title: News and Events
-layout: default
+layout: default-hubpage
 url: news-and-events
 ---
 
