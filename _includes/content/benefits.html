@@ -26,15 +26,17 @@
 
             <div class="col-12 col-lg-6 col-xxl-8 vel--quotes">
                 {% for item in site.data.quotes limit:2 %}
-                <figure>
-                    <picture>
-                        <img src="{{item.image}}" class="rounded-circle">
-                    </picture>
-                    <blockquote class="">
-                        {{item.text}}
-                    </blockquote>
-                    <figcaption>{{item.author}}</figcaption>
-                </figure>
+                    <figure class="vel--quote-item">
+                        <picture class="vel--quote-image">
+                            <img src="{{item.image}}" class="rounded-circle">
+                        </picture>
+                        <div class="vel--quote-textwrap">
+                            <blockquote class="vel--quote-text">
+                                {{item.text}}
+                            </blockquote>
+                            <figcaption class="vel--quote-author">{{item.author}}</figcaption>
+                        </div>
+                    </figure>
                 {% endfor %}
             </div>
 
