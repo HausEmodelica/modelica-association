@@ -1,4 +1,5 @@
 url: https://hausemodelica.github.io/modelica-association
+baseurl: ""
 
 collections:
   events:
