@@ -1,7 +1,15 @@
         <footer>
             <div class="container is--container-medium pt-7 pb-5 mt-1">
-                {% include footer/pagefooter.html %}
-                {% include footer/navigation.html %}
+
+                {%
+                    include footer/pagefooter.html
+                    text="Get to know the Modelica Association Projects:"
+                %}
+
+                {%
+                    include footer/navigation.html
+                %}
+
             </div>
         </footer>
     </body>
