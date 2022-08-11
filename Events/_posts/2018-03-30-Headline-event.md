@@ -1,5 +1,5 @@
 ---
-author: modelica
+author: modelica.org
 title: Headline event
 eventdate: 01.10.2022
 layout: post

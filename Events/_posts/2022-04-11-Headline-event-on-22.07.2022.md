@@ -1,5 +1,5 @@
 ---
-author: modelica
+author: modelica.org
 title: Headline event on 22.07.2022
 eventdate: 22.07.2022 - 23.07.2022 from 09:00 to 18:00
 layout: post

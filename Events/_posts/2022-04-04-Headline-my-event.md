@@ -1,5 +1,5 @@
 ---
-author: modelica
+author: modelica.org
 title: Headline my event
 eventdate: 11.11.2022 from 09:00 to 18:00
 layout: post
