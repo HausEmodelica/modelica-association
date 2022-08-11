@@ -21,7 +21,7 @@
                         {{ mainItem.name }}
                     </a>
                     {% assign mainItemUrl = mainItem.url | remove: '/' %}
-                    {% assign children = site.pages | where_exp: "page", "page.parent == mainItemUrl" %}
+                    {% assign children = site.pages | where_exp: "p", "p.parent == mainItemUrl" %}
 
                     {% if children.size > 0 %}
                     <ul class="dropdown-menu">
