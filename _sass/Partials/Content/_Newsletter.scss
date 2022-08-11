@@ -1,19 +1,7 @@
 .newsletter {
-  position: relative;
-  width: 100%;
-  @include flex-rules(center, center, center, normal, row);
-
-  &::before {
-    content: "";
-    background: transparent
-    url("https://c-papabechtelou.github.io/first-template/assets/images/images/example-bg-newsletter--1920x580.jpg")
-    0% 0% no-repeat padding-box;
+    background-image: url("/assets/images/images/example-bg-newsletter--1920x580.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.5;
-  }
+    background-blend-mode: hard-light;
+    background-color: $white;
 }
