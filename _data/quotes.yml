@@ -1,9 +1,9 @@
-- image: /assets/images/images/example-quote-person-a--223x223.jpg
+- image: assets/images/images/example-quote-person-a--223x223.jpg
   text: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
   author: Lorem ipsum dolor sit amet
-- image: /assets/images/images/example-quote-person-b--223x223.jpg
+- image: assets/images/images/example-quote-person-b--223x223.jpg
   text: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
   author: Lorem ipsum dolor sit amet
-- image: /assets/images/images/example-quote-person-a--223x223.jpg
+- image: assets/images/images/example-quote-person-a--223x223.jpg
   text: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
   author: Lorem ipsum dolor sit amet
