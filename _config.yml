@@ -20,8 +20,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-permalink: none
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
