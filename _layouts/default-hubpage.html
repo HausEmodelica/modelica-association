@@ -1,40 +1,25 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
-        {% feed_meta %}
-        {% seo %}
-        {% if jekyll.environment == "production" %}
-        <script src="my-analytics-script.js"></script>
-        {% endif %}
-        <script src="{{ site.url }}/assets/js/bootstrap/bootstrap.bundle.js"></script>
-    </head>
-    <body>
-        <header>
+{%
+    include header/header.html
+%}
 
-            {% include header/mainnavigation.html %}
+{%
+    include header/mainnavigation.html
+%}
 
-            <div class="container-fluid p-0">
-                {% include header/header.html %}
-            </div>
-        </header>
-        <main>
-            <div style="background:red;">
-                {{content}}
-            </div>
-            <div class="" style="background:green;">
-                Layout: default-hubpage
-            </div>
-        </main>
-        <footer>
-            <div class="container is--container-medium pt-7 pb-5 mt-1">
-                {% include footer/footer.html %}
-                {% include footer/navigation.html %}
-            </div>
-        </footer>
-    </body>
-</html>
+<main>
+
+    <div class="vel--section pt-10 pb-5">
+        <div class="container is--container-medium">
+
+            <h1>{{title}}</h1>
+
+            {{content}}
+
+        </div>
+    </div>
+
+</main>
+
+{%
+    include footer/footer.html
+%}

@@ -1,0 +1,45 @@
+<div class="vel--section associations pt-9">
+    <div class="container is--container-medium">
+        <div class="row ">
+            <div class="col-12 has--red-headline vel--title mb-5 text-center">
+                <{{include.htype}}{% if {{include.hclass}} %} class="{{include.hclass}}"{% endif %}>{{include.headline}}</{{include.htype}}>
+            </div>
+        </div>
+        <div class="row">
+            {% for item in site.data.association %}
+            <div class="col-12 col-md-6 col-lg-4 my-1 my-lg-0">
+                <div class="card px-2 py-7 h-100 has--lightred-border">
+                    <div class="card-img-top h-100">
+                        <div class="row ">
+                            <div class="col-6 col-xxl-4 col-xxxl-3 mx-auto vel--icon mb-6">
+                                <a href="{{item.link}}" title="{{item.linktext}}">
+                                    <figure>
+                                        <picture>
+                                            <img src="{{item.icon}}" class="p-2"/>
+                                        </picture>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h3 class="text-center"><a href="{{item.link}}" title="{{item.linktext}}">{{item.title}}</a></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center mb-1">
+                            <p>{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center text-uppercase">
+                            <a class="btn" href="{{item.link}}">{{item.linktext}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

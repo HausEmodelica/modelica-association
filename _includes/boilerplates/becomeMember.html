@@ -1,0 +1,31 @@
+<div class="vel--section become-a-member py-9">
+    <div class="container is--container-medium">
+        <div class="row">
+            <div class="col-12 vel--member-background">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card py-7 px-2 p-sm-8">
+                            <div class="row">
+                                <div class="col-12 col-lg-8 vel--title has--red-headline mb-2">
+                                    <{{include.htype}}{% if {{include.hclass}} %} class="{{include.hclass}}"{% endif %}>{{include.headline}}</{{include.htype}}>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-7 vel--info mt-2 mb-3">
+                                    <p>
+                                        {{include.text}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-9 vel--link d-grid">
+                                    <a class="btn btn-primary text-uppercase has--white-font" href="{{include.buttonlink}}" title="{{include.buttontext}}">{{include.buttontext}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

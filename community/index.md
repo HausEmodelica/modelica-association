@@ -1,6 +1,6 @@
 ---
 title: Community
-layout: default
+layout: default-hubpage
 url: community
 ---
 

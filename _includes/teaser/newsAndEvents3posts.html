@@ -1,0 +1,39 @@
+<div class="vel--section news-and-events has--background-light pt-7 pb-10">
+    <div class="container is--container-small px-2">
+        <div class="row">
+            <div class="col-12 vel--title has--red-headline text-center mb-7">
+                <{{include.htype}}{% if {{include.hclass}} %} class="{{include.hclass}}"{% endif %}>{{include.headline}}</{{include.htype}}>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 vel--news h-100 mb-md-5 mb-lg-0">
+                {% for news in site.categories.News limit:3 %}
+                <div class="row vel--entry has--white-headline has--lightred-border mb-3 mb-sm-1 me-lg-3 pe-md-1 h-100">
+                    <time class="col-12 col-sm-3 vel--date has--background-red text-sm-center pt-2 pb-1 py-sm-3 h-100">
+                        <h5>{{news.date | date: "%b %-d, %Y" }}</h5>
+                    </time>
+                    <div class="col-10 col-sm-8 vel--info ps-3 pe-1 py-2 h-100">
+                        <a class="h6" href="{{news.url}}" title="{{news.title}}">{{news.title}}</a>
+                    </div>
+                    <div class="col-1 vel--icon pb-1"></div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="col-12 col-lg-6 vel--events h-100">
+                {% for event in site.categories.Events limit:3 %}
+                <div class="row vel--entry has--white-headline has--dark-border mb-3 mb-sm-1 ms-lg-3 pe-md-1 h-100">
+                    <time class="col-12 col-sm-3 vel--date has--background-dark text-sm-center h-100 pt-2 pb-1 py-sm-3">
+                        <h5>{{event.date | date: "%b %-d, %Y" }}</h5>
+                    </time>
+                    <div class="col-10 col-sm-8 vel--info ps-3 pe-1 py-2 h-100">
+                        <a class="h6" href="{{event.url}}" title="{{event.title}}">{{event.title}}</a>
+                    </div>
+                    <div class="col-1 vel--icon pb-1"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 ---
-author: jill
-date: 20.08.2018
-title: Headline first news
+author: modelica
+title: Headline latest news
+layout: post
 ---
 Excerpt Second Initial version of Web page Excerpt Second Initial version of Web pageExcerpt Second Initial version of Web page
 Excerpt Second Initial version of Web page Excerpt Second Initial version of Web pageExcerpt Second Initial version of Web page

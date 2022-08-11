@@ -1,146 +1,256 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        {% feed_meta %}
-        {% seo %}
-        {% if jekyll.environment == "production" %}
-        <script src="my-analytics-script.js"></script>
-        {% endif %}
-        <script src="{{ site.url }}/assets/js/bootstrap/bootstrap.bundle.js"></script>
-    </head>
-    <body>
-        <header>
+{%
+    include header/header.html
+%}
 
-            {% include header/mainnavigation.html %}
+{%
+    include header/mainnavigation.html
+%}
 
-            <div class="container-fluid p-0">
-                <div class="row mx-0">
-                    <div class="col-12 header-image p-0">
-                        <figure>
-                            <picture>
-                                <source srcset="{{site.url}}/assets/images/images/example-header-1920x584.jpg" media="(min-width: 992px)">
-                                <source srcset="{{site.url}}/assets/images/images/example-header-820x584.jpg" media="(min-width: 768px)">
-                                <source srcset="{{site.url}}/assets/images/images/example-header-375x584.jpg" media="(max-width: 767px)">
-                                <img src="{{site.url}}/assets/images/images/example-header-1920x584.jpg">
-                            </picture>
-                        </figure>
-                       <div class="row has--background-light mx-0 px-1 px-md-4 px-lg-0">
-                            <div class="col-12 col-lg-6 offset-lg-3 vel--header-overlay has--background-white py-5 ps-5 pe-9">
-                                <div class="col-12 vel--overlay-headline">
-                                    <div class="row">
-                                        <div class="col-12 vel--title m-0">
-                                            <h1 class="h2">
-                                                {{page.headline1}}
-                                                <span>{{page.headline2}}</span>
-                                            </h1>
-                                        </div>
-                                    </div>
+<main>
+
+    <div class="container-fluid p-0">
+        <div class="row mx-0">
+            <div class="col-12 header-image p-0">
+                <figure>
+                    <picture>
+                        <source srcset="/assets/images/images/example-header-1920x584.jpg" media="(min-width: 992px)">
+                        <source srcset="/assets/images/images/example-header-820x584.jpg" media="(min-width: 768px)">
+                        <source srcset="/assets/images/images/example-header-375x584.jpg" media="(max-width: 767px)">
+                        <img src="/assets/images/images/example-header-1920x584.jpg">
+                    </picture>
+                </figure>
+                <div class="row has--background-light mx-0 px-1 px-md-4 px-lg-0">
+                    <div class="col-12 col-lg-6 offset-lg-3 vel--header-overlay has--background-white py-5 ps-5 pe-9">
+                        <div class="col-12 vel--overlay-headline">
+                            <div class="row">
+                                <div class="col-12 vel--title m-0">
+                                    <h1 class="h2">
+                                        {{page.headline1}}
+                                        <span>{{page.headline2}}</span>
+                                    </h1>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 vel--overlay-info pt-1">
-                                        {{content}}
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 vel--overlay-info pt-1">
+                                {{content}}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main>
+        </div>
+    </div>
 
-            <div class="vel--section news-and-events has--background-light pt-7 pb-10">
-                <div class="container is--container-small px-2">
-                    {% include content/newsAndEvents.html %}
-                </div>
-            </div>
+    {% comment %}
+    #################################################
+    # Include Block
+    # List of news and events
+    # 3 latest posts
+    #
+    # @Data: News folder -> _posts -> latest md by date
+    # @Data: Events folder -> _posts -> latest md md by date
+    #
+    # @Optional: headline | hclass
+    # @Requires: -
+    # @Requires if: htype if headline
+    #################################################
+    {% endcomment %}
 
-            {% comment %}
-            #################################################
-            # Include Block
-            # List of modelica standards
-            #
-            # @Data: _data/standards.yml
-            #
-            # @Optional: headline | hclass
-            # @Requires: -
-            # @Requires if: htype if headline
-            #################################################
-            {% endcomment %}
+    {%
+        include teaser/newsAndEvents3posts.html
+        headline="News and Events"
+        htype="h2"
+        hclass="h2"
+    %}
 
-            {% include content/standards.html headline="Modelica Association Standards" htype="div" hclass="h2" %}
+    {% comment %}
+    #################################################
+    # Include Block
+    # List of modelica standards
+    #
+    # @Data: _data/standards.yml
+    #
+    # @Optional: headline | hclass
+    # @Requires: -
+    # @Requires if: htype if headline
+    #################################################
+    {% endcomment %}
 
-            {% comment %}
-            #################################################
-            # Include Block
-            # List of modelica services
-            #
-            # @Data: _data/services.yml
-            #
-            # @Optional: headline | hclass
-            # @Requires: -
-            # @Requires if: htype if headline
-            #################################################
-            {% endcomment %}
+    {%
+        include teaser/standards.html
+        headline="Modelica Association Standards"
+        htype="div"
+        hclass="h2"
+    %}
 
-            {% include content/services.html headline="Services" htype="h2" hclass="" %}
+    {% comment %}
+    #################################################
+    # Include Block
+    # List of modelica services
+    #
+    # @Data: _data/services.yml
+    #
+    # @Optional: headline | hclass
+    # @Requires: -
+    # @Requires if: htype if headline
+    #################################################
+    {% endcomment %}
 
-            {% comment %}
-            #################################################
-            # Include Block
-            # List of modelica services
-            #
-            # @Data: _data/services.yml
-            #
-            # @Optional: headline | hclass
-            # @Requires: -
-            # @Requires if: htype if headline
-            #################################################
-            {% endcomment %}
+    {%
+        include teaser/services.html
+        headline="Services"
+        htype="h2"
+        hclass=""
+    %}
 
-            <div class="vel--section become-a-member py-9">
-                <div class="container is--container-medium">
-                    {% include content/becomeMember.html %}
-                </div>
-            </div>
+    {% comment %}
+    #################################################
+    # Include Block
+    # Become member boilerplate
+    #
+    # @Data: -
+    #
+    # @Optional: -
+    # @Requires: -
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
 
-            <div class="vel--section benefits has--background-dark py-10">
-                <div class="container is--container-medium">
-                    {% include content/benefits.html %}
-                </div>
-            </div>
+    {%
+        include boilerplates/becomeMember.html
+        headline="Become a member"
+        htype="h2"
+        hclass=""
+        text="Hier könnte ein Mosaik mit vielen Gesichtern dazu einladen, sich dem Verein anzuschließen."
+        buttonlink="community/become-a-member.html"
+        buttontext="Become a member"
+    %}
 
-            <div class="vel--section newsletter  py-9">
-                <div class="container is--container-medium mb-4">
-                    {% include content/newsletter.html %}
-                </div>
-            </div>
-            <div class="vel--section associations  pt-9">
-                <div class="container is--container-medium">
-                    {% include content/association.html %}
-                </div>
-            </div>
-            <div class="vel--section members  pt-9 pb-10">
-                <div class="container is--container-medium">
-                    {% include content/members.html %}
-                </div>
-            </div>
-            <div class="vel--section contact  pt-8 pb-9">
-                <div class="container is--container-medium">
-                    {% include content/contact.html %}
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="container is--container-medium pt-7 pb-5 mt-1">
-                {% include footer/footer.html %}
-                {% include footer/navigation.html %}
-            </div>
-        </footer>
-    </body>
-</html>
+    {% comment %}
+    #################################################
+    # Include Block
+    # benefits block with two quotes
+    # 
+    # @Data: Quotes > _data/quotes.yml
+    #
+    # @Optional: -
+    # @Requires: headline, htype, hclass, text, buttonlink, buttontext
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
+
+    {%
+        include content/benefits.html
+        headline="Modelica benefits"
+        htype="h2"
+        hclass="h3"
+        text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatemExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+        buttonlink="about/benefits.html"
+        buttontext="More about our benefits"
+    %}
+
+    {% comment %}
+    #################################################
+    # Include Block
+    # use cases
+    # 3 latest use cases
+    # 
+    # @Data: use-cases folder -> _posts -> latest md by date
+    #
+    # @Optional: -
+    # @Requires: -
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
+
+    {%
+        include teaser/usecases3posts.html
+    %}
+
+    {% comment %}
+    #################################################
+    # Include Block
+    # Newsletter subscription boilerplate
+    #
+    # @Data: -
+    #
+    # @Optional: -
+    # @Requires: -
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
+
+    {%
+        include boilerplates/newsletter.html
+        headline="Newsletter"
+        htype="h2"
+        hclass=""
+        text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem"
+    %}
+
+    {% comment %}
+    #################################################
+    # Include Block
+    # About association teaser
+    #
+    # @Data: -
+    #
+    # @Optional: -
+    # @Requires: -
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
+
+    {%
+        include teaser/association.html
+        headline="About Modelica Association"
+        htype="h2"
+        hclass=""
+    %}
+
+    {% comment %}
+    #################################################
+    # Include Block
+    # Members list
+    #
+    # @Data: -
+    #
+    # @Optional: -
+    # @Requires: -
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
+
+    {%
+        include content/members.html
+        headline="About Modelica Association"
+        htype="h2"
+        hclass=""
+    %}
+
+    {% comment %}
+    #################################################
+    # Include Block
+    # Contact form
+    #
+    # @Data: -
+    #
+    # @Optional: -
+    # @Requires: -
+    # @Requires if: -
+    #################################################
+    {% endcomment %}
+
+    {%
+        include content/contactform.html
+        headline="Contact"
+        htype="h3"
+        hclass=""
+    %}
+
+</main>
+
+{%
+    include footer/footer.html
+%}

@@ -1,42 +1,48 @@
-<nav class="navbar navbar-expand-lg is--container-medium vel--mainnav">
-    <div class="container">
-        <a class="navbar-brand" href="/">
-            {% include image.html file="brand/n_modelica-ass--color.svg" alt="Modelica Homepage" class="test-class" %}
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <figure>
-                    <picture>
-                        <source srcset="{{site.url}}/assets/images/toggle-icon.svg">
-                        <img src="{{site.url}}/assets/images/toggle-icon.svg">
-                    </picture>
-                </figure>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                {% for mainItem in site.data.mainnavigation %}
-                <li class="nav-item">
-                    <a class="nav-link {% if page.url == mainItem.link %}is--active{% endif %}" href="{{site.url}}{{ mainItem.url }}">
-                        {{ mainItem.name }}
-                    </a>
-                    {% assign mainItemUrl = mainItem.url | remove: '/' %}
-                    {% assign children = site.pages | where_exp: "p", "p.parent == mainItemUrl" %}
+<header>
+    <nav class="navbar navbar-expand-lg is--container-medium vel--mainnav">
+        <div class="container">
+            <a class="navbar-brand" href="{{site.url}}">
+                {%
+                    include image.html
+                    file="brand/n_modelica-ass--color.svg"
+                    alt="Modelica Homepage"
+                    class="test-class"
+                %}
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <figure>
+                        <picture>
+                            <img src="/assets/images/toggle-icon.svg">
+                        </picture>
+                    </figure>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    {% for mainItem in site.data.mainnavigation %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.url == mainItem.link %}is--active{% endif %}" href="{{site.url}}{{ mainItem.url }}">
+                            {{ mainItem.name }}
+                        </a>
+                        {% assign mainItemUrl = mainItem.url | remove: '/' %}
+                        {% assign children = site.pages | where_exp: "p", "p.parent == mainItemUrl" %}
 
-                    {% if children.size > 0 %}
-                    <ul class="dropdown-menu">
-                        <span class="dropdown-toggle d-xl-none" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
-                        {% for childNode in children %}
-                            <li>
-                                <a class="dropdown-item" href="{{childNode.url}}">{{childNode.title}}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
+                        {% if children.size > 0 %}
+                        <ul class="dropdown-menu">
+                            <span class="dropdown-toggle d-xl-none" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                            {% for childNode in children %}
+                                <li>
+                                    <a class="dropdown-item" href="{{childNode.url}}">{{childNode.title}}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
 
-                </li>
-                {% endfor %}
-            </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>

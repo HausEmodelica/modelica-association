@@ -1,0 +1,21 @@
+{%
+    include header/header.html
+%}
+
+{%
+    include header/mainnavigation.html
+%}
+
+<main>
+
+    <div class="container is--container-small">
+        <time datetime="">{{ page.date | date: "%d.%m.%Y" }}</time>
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </div>
+
+</main>
+
+{%
+    include footer/footer.html
+%}

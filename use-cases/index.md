@@ -1,6 +1,6 @@
 ---
 title: Use cases
-layout: default
+layout: default-hubpage
 url: use-cases
 ---
 

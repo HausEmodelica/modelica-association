@@ -1,0 +1,54 @@
+<div class="vel--section contact pt-8 pb-9">
+    <div class="container is--container-medium">
+        <div class="row">
+            <div class="col-12 vel--title text-center has--white-headline mb-3">
+                <{{include.htype}}{% if {{include.hclass}} %} class="{{include.hclass}}"{% endif %}>{{include.headline}}</{{include.htype}}>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-6 offset-xl-3">
+                <div class="row">
+                        <div class="form-floating">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 form-floating mb-2">
+                                    <input type="text" class="form-control ps-2 border-0" id="exampleInputName" placeholder="Name">
+                                    <label for="exampleInputName" class="form-label p-2 ms-1">Name</label>
+                                </div>
+                                <div class="col-12 col-lg-6 form-floating mb-2">
+                                    <input type="email" class="form-control ps-2 border-0" id="exampleInputSurname" placeholder="Surname">
+                                    <label for="exampleInputSurname" class="form-label p-2 ms-1">Surname</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 form-floating mb-2">
+                                    <input type="email" class="form-control ps-2 border-0" id="exampleInputEmail1" placeholder="Email">
+                                    <label for="exampleInputEmail1" class="form-label p-2 ms-1">Email</label>
+                                </div>
+                                <div class="col-12 col-lg-6 form-floating mb-2">
+                                    <input type="number" class="form-control ps-2 border-0" id="exampleInputPhone" placeholder="Phone number">
+                                    <label for="exampleInputPhone" class="form-label p-2 ms-1">Phone number</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 form-floating">
+                                    <textarea class="form-control ps-2 h-100  border-0" id="exampleInputMessage" rows="5" placeholder="Message"></textarea>
+                                    <label for="exampleInputMessage" class="form-label p-2 ms-1">Message</label>
+                                </div>
+                            </div>
+                            <div class="my-4 form-check has--white-font">
+                                <input type="checkbox" class="form-check-input me-2 border-0  col-2 col-md-auto" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Yes, I agree to the data protection
+                                    agreement.</label>
+                            </div>
+                            <div class="col-12 col-lg-8 d-grid offset-lg-2">
+                                <button type="submit" class="btn btn-primary text-uppercase">Send</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="vel--section use-cases has--background-dark pt-5 pb-10">
+    <div class="container is--container-medium">
+        <div class="row vel--use-cases mt-10">
+            {% for usecase in site.categories.use-cases limit:3 %}
+            <div class="col-12 col-md-6 col-lg-4 my-1 my-lg-0">
+                <div class="card has--background-dark has--light-border has--white-font has--white-headline py-7 px-6 h-100">
+                    <div class="card-title text-center mb-2"><h3>{{usecase.title}}</h3></div>
+                    <div class="card-text mb-2"><p>{{usecase.excerpt}}</p></div>
+                    <div class="col-12 vel--link mt-1">
+                        <a class="btn text-decoration-underline has--white-font" href="{{usecase.url}}">Read more</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
