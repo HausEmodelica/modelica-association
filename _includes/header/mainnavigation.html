@@ -15,23 +15,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                {% for item in site.data.mainnavigation %}
+                {% for mainItem in site.data.mainnavigation %}
                 <li class="nav-item">
-                    <a class="nav-link {% if page.url == item.link %}is--active{% endif %}" href="{{site.url}}{{ item.url }}">{{ item.name }}</a>
+                    <a class="nav-link {% if page.url == mainItem.link %}is--active{% endif %}" href="{{site.url}}{{ mainItem.url }}">
+                        {{ mainItem.name }}
+                    </a>
+                    {% assign mainItemUrl = mainItem.url | remove: '/' %}
+                    {% assign children = site.pages | where_exp: "page", "page.parent == mainItemUrl" %}
 
-                    {% assign nodes = site.html_pages | sort: "order" %}
-                    {% assign itemurl = item.url | remove: '/' %}
-
+                    {% if children.size > 0 %}
                     <ul class="dropdown-menu">
                         <span class="dropdown-toggle d-xl-none" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
-                    {% for node in nodes %}
-                        {% if node.parent == itemurl %}
+                        {% for childNode in children %}
                             <li>
-                                <a class="dropdown-item" href="{{node.url}}">{{node.title}}</a>
+                                <a class="dropdown-item" href="{{childNode.url}}">{{childNode.title}}</a>
                             </li>
-                        {% endif %}
-                    {% endfor %}
+                        {% endfor %}
                     </ul>
+                    {% endif %}
 
                 </li>
                 {% endfor %}
