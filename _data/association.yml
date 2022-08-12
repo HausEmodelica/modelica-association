@@ -1,14 +1,14 @@
-- icon: /assets/images/icons/n_vision--xl--red.svg
+- icon: assets/images/icons/n_vision--xl--red.svg
   title: Vision
   text: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-  link: /about/vision.html
+  link: about/vision.html
   linktext: More about our vision
-- icon: /assets/images/icons/n_board--xl--red.svg
+- icon: assets/images/icons/n_board--xl--red.svg
   title: Board
   text: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
   linktext: More about us
-- icon: /assets/images/icons/n_history--xl--red.svg
+- icon: assets/images/icons/n_history--xl--red.svg
   title: History
   text: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   link: #
