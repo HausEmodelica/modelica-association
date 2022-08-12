@@ -1,0 +1,17 @@
+.vel--introheader {
+    position: relative;
+
+    .vel--introheader-content {
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+    }
+    .vel--title {
+        span{
+            font-weight: $font-weight-normal;
+            display: block;
+        }
+    }
+}
+

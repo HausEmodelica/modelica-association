@@ -2,7 +2,7 @@
 author: modelica.org
 title: Headline event
 eventdate: 01.10.2022
-layout: post
+layout: event
 ---
 Excerpt: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 

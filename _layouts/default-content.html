@@ -6,15 +6,23 @@
     include header/mainnavigation.html
 %}
 
-<main>
+<main class="layout--default-content">
 
-    <div class="vel--section pt-10 pb-5">
+    <div class="dev--layout-helper">
+        Layout: default-content
+    </div>
+
+    <div class="vel--section py-10">
         <div class="container is--container-medium">
+            <div class="row">
+                <div class="col-12">
 
-            <h1>{{title}}</h1>
+                    <h1>{{page.title}}</h1>
 
-            {{content}}
+                    {{content}}
 
+                </div>
+            </div>
         </div>
     </div>
 

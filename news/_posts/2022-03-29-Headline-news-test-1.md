@@ -1,6 +1,6 @@
 ---
 author: modelica
-title: Headline latest news
+title: Headline news test one
 layout: post
 ---
 Excerpt Second Initial version of Web page Excerpt Second Initial version of Web pageExcerpt Second Initial version of Web page

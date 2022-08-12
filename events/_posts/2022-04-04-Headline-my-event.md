@@ -2,7 +2,7 @@
 author: modelica.org
 title: Headline my event
 eventdate: 11.11.2022 from 09:00 to 18:00
-layout: post
+layout: event
 ---
 Excerpt: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 

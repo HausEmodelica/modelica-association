@@ -1,0 +1,11 @@
+.dev--layout-helper {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 99999;
+    white-space: no-wrap;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255,0,0,0.4);
+    padding: 2px;
+}
