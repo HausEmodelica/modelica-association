@@ -4,6 +4,8 @@ baseurl: ""
 collections:
   events:
     output: true
+  footer_pages:
+    output: true
 
 defaults:
   - scope:
