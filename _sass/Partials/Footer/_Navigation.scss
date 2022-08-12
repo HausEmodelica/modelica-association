@@ -1,13 +1,21 @@
-footer{
-  nav{
-    .nav-link{
-      font-size: $font-size-lg;
-      &:not(:nth-child(3))::after{
-        content: "|";
-        font-weight: $font-weight-bold;
-        padding-left: 5px;
-        padding-right:5px;
-      }
-    }
-  }
+.vel--footer-navigation {
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0 0;
+
+        li {
+            a {
+                font-weight: $font-weight-bold;
+                color: $white;
+                display: block;
+                padding: 6px;
+            }
+            &:not(:last-child) a::after {
+                content: "|";
+                position: relative;
+                right: -3px;
+            }
+        }
+    }      
 }
