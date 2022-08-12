@@ -1,9 +1,11 @@
+---
+---
 <nav class="navbar navbar-expand">
     <div class="container justify-content-center">
             <div class="navbar-nav">
                 {% for footerItem in site.footer_pages %}
-                <a href="{{footerItem.url}}" class="nav-link has--white-font p-0">
-                    <strong>{{footerItem.title}}</strong>
+                <a href="" class="nav-link has--white-font p-0">
+                    <strong>{{footerItem.title}}</strong><br>{% link {{footerItem.path}} %}
                 </a>
                 {% endfor %}
             </div>
