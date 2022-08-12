@@ -1,6 +1,6 @@
 ---
 title: Use case two
-layout: post
+layout: usecase
 ---
 Excerpt: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
 

@@ -1,8 +1,5 @@
 # Struktur
-- GROSS geschriebene Ordner sind "Kategorie"-Ordner
-    - in den _posts-Ordnern sind die jeweiligen Posts
-- klein geschriebene Ordner sind "Seiten"-Ordner
-    - in "Seiten"-Ordnern gibt es eine index.md, welches die Hub-Seite repräsentiert
+
 
 # Image viewhelper
 - Alternative to responsive images with automatic size calculation

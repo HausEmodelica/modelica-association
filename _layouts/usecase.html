@@ -1,0 +1,33 @@
+{%
+    include header/header.html
+%}
+
+{%
+    include header/mainnavigation.html
+%}
+
+<main class="layout--usecase">
+
+    <div class="dev--layout-helper">
+        Layout: usecase
+    </div>
+
+    <div class="vel--section py-10">
+        <div class="container is--container-small">
+            <div class="row">
+                <div class="col-12">
+
+                    <h1>{{ page.title }}</h1>
+
+                    {{ content }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{%
+    include footer/footer.html
+%}
