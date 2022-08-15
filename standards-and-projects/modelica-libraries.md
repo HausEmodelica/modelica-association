@@ -1,5 +1,5 @@
 ---
-title: Modelica libraries
+title: Modelica Libraries
 layout: default-content
 url: modelica-language
 parent: standards-and-projects
