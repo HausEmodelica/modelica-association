@@ -1,5 +1,5 @@
 <figure>
-    {% if {{include.url}} %}<a href="{{include.url}}" title="{{urltitle}}">{% endif %}
+    {% if {{include.url}} %}<a href="{{ include.url | relative_url }}" title="{{urltitle}}">{% endif %}
     <picture>
         {% if {{include.file1366}} %}
         <source srcset="{{include.file1366}}" media="(min-width: 1366px)">

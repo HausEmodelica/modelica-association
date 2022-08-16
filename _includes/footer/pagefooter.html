@@ -7,7 +7,7 @@
             {% for item in site.data.footerfirst %}
                 <div class="col-12 col-lg-3">
                     <div class="vel--footer-project-item">
-                        <a href="{{item.link}}" title="{{item.linktitle}}" target="_blank">
+                        <a href="{{ item.link | relative_url }}" title="{{item.linktitle}}" target="_blank">
                             <figure>
                                 <picture class="vel--footer-project-logo">
                                     <img src="{{ item.logo | relative_url }}"/>
@@ -22,7 +22,7 @@
             {% for item in site.data.footersecond %}
                 <div class="col-12 col-lg-3">
                     <div class="vel--footer-project-item">
-                        <a href="{{item.link}}" title="{{item.linktitle}}" target="_blank">
+                        <a href="{{ item.link | relative_url }}" title="{{item.linktitle}}" target="_blank">
                             <figure>
                                 <picture class="vel--footer-project-logo">
                                     <img src="{{ item.logo | relative_url }}"/>

@@ -14,7 +14,7 @@
                         <h5>{{news.date | date: "%b %-d, %Y" }}</h5>
                     </time>
                     <div class="col-10 col-sm-8 vel--info ps-3 pe-1 py-2 h-100">
-                        <a class="h6" href="{{news.url}}" title="{{news.title}}">{{news.title}}</a>
+                        <a class="h6" href="{{ news.url | relative_url }}" title="{{news.title}}">{{news.title}}</a>
                     </div>
                     <div class="col-1 vel--icon pb-1"></div>
                 </div>
@@ -28,7 +28,7 @@
                         <h5>{{event.date | date: "%b %-d, %Y" }}</h5>
                     </time>
                     <div class="col-10 col-sm-8 vel--info ps-3 pe-1 py-2 h-100">
-                        <a class="h6" href="{{event.url}}" title="{{event.title}}">{{event.title}}</a>
+                        <a class="h6" href="{{ event.url | relative_url }}" title="{{event.title}}">{{event.title}}</a>
                     </div>
                     <div class="col-1 vel--icon pb-1"></div>
                 </div>

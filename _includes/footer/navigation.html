@@ -3,7 +3,7 @@
         <ul class="list-unstyled">
             {% for footerItem in site.footer_pages %}
             <li>
-                <a href="{{footerItem.url}}" title="{{footerItem.title}}">
+                <a href="{{ footerItem.url | relative_url }}" title="{{footerItem.title}}">
                     {{footerItem.title}}
                 </a>
             </li>

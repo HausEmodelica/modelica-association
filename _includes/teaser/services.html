@@ -16,7 +16,7 @@
                     <div class="card-img-top h-100">
                         <div class="row">
                         <div class="col-4 col-lg-6 col-xxl-4 mb-2 mx-auto">
-                            <a href="{{site.url}}{{item.link}}">
+                            <a href="{{  item.link | relative_url }}">
                                 <figure>
                                     <picture>
                                         <img src="{{ item.icon | relative_url }}" alt="{{item.iconalt}}" />
@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-12 vel--item-title text-center my-2">
                             <{{include.itemhtype}}{% if {{include.itemhclass}} %} class="{{include.itemhclass}}"{% endif %}>
-                                <a href="{{site.url}}{{item.link}}">{{item.title}}</a>
+                                <a href="{{  item.link | relative_url }}">{{item.title}}</a>
                             </{{include.itemhtype}}>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 vel--link d-grid">
-                            <a href="{{site.url}}{{item.link}}" class="btn text-center text-decoration-underline" title="{{item.title}}">More</a>
+                            <a href="{{  item.link | relative_url }}" class="btn text-center text-decoration-underline" title="{{item.title}}">More</a>
                         </div>
                     </div>
 

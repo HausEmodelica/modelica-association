@@ -5,11 +5,11 @@
             <div class="col-12 col-md-6 col-lg-4 my-1 my-lg-0">
                 <div class="card has--background-dark has--light-border has--white-font has--white-headline py-7 px-6 h-100">
                     <div class="card-title text-center mb-2">
-                        <h3><a class="text-white" href="{{usecase.url}}" title="{{usecase.title}}">{{usecase.title}}</a></h3>
+                        <h3><a class="text-white" href="{{ usecase.url | relative_url }}" title="{{usecase.title}}">{{usecase.title}}</a></h3>
                     </div>
                     <div class="card-text mb-2"><p>{{usecase.excerpt}}</p></div>
                     <div class="col-12 vel--link mt-1">
-                        <a class="btn text-decoration-underline has--white-font" href="{{usecase.url}}" title="{{usecase.title}}">Read more</a>
+                        <a class="btn text-decoration-underline has--white-font" href="{{ usecase.url | relative_url }}" title="{{usecase.title}}">Read more</a>
                     </div>
                 </div>
             </div>
