@@ -6,12 +6,12 @@
         <title>{{page.title}}</title>
         <base href="{{site.url}}/">
         <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
         {% feed_meta %}
         {% seo %}
         {% if jekyll.environment == "production" %}
         <script src="my-analytics-script.js"></script>
         {% endif %}
-        <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+        <script src="{{ '/assets/js/bootstrap/bootstrap.bundle.js' | relative_url }}"></script>
     </head>
     <body>

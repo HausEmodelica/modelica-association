@@ -2,14 +2,15 @@
     {% if {{include.url}} %}<a href="{{include.url}}" title="{{urltitle}}">{% endif %}
     <picture>
         {% if {{include.file1366}} %}
-            <source srcset="{{include.file1366}}" media="(min-width: 1366px)">
+        <source srcset="{{include.file1366}}" media="(min-width: 1366px)">
         {% endif %}
         {% if {{include.file768}} %}
-            <source srcset="{{include.file768}}" media="(min-width: 768px)">
-        {% endif %}    
-        <img class="{{include.class}}" src="assets/images/{{include.file}}" alt="{{include.alt}}" {% if {{include.max-width}} %}style="max-width: {{include.max-width}}px"{% endif %} />
+        <source srcset="{{include.file768}}" media="(min-width: 768px)">
+        {% endif %}
+        {% assign imageFileAndPath = '/assets/images/' | append: {{include.file}}  %}
+        <img class="{{include.class}}" src="{{ imageFileAndPath | relative_url }}" alt="{{include.alt}}" {% if {{include.max-width}} %}style="max-width: {{include.max-width}}px"{% endif %} />
         {% if {{include.caption}} %}
-            <figcaption>{{include.caption}}</figcaption>
+        <figcaption>{{include.caption}}</figcaption>
         {% endif %}
     </picture>
     {% if {{include.url}} %}</a>{% endif %}

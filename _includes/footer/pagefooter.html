@@ -10,7 +10,7 @@
                         <a href="{{item.link}}" title="{{item.linktitle}}" target="_blank">
                             <figure>
                                 <picture class="vel--footer-project-logo">
-                                    <img src="{{item.logo}}"/>
+                                    <img src="{{ item.logo | relative_url }}"/>
                                 </picture>
                             </figure>
                         </a>
@@ -25,7 +25,7 @@
                         <a href="{{item.link}}" title="{{item.linktitle}}" target="_blank">
                             <figure>
                                 <picture class="vel--footer-project-logo">
-                                    <img src="{{item.logo}}"/>
+                                    <img src="{{ item.logo | relative_url }}"/>
                                 </picture>
                             </figure>
                         </a>

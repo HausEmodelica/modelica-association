@@ -28,7 +28,7 @@
                 {% for item in site.data.quotes limit:2 %}
                     <figure class="vel--quote-item">
                         <picture class="vel--quote-image">
-                            <img src="{{item.image}}" class="rounded-circle">
+                            <img src="{{ item.image | relative_url }}" class="rounded-circle">
                         </picture>
                         <div class="vel--quote-textwrap">
                             <blockquote class="vel--quote-text">
