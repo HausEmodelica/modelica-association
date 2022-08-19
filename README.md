@@ -1,1 +1,1 @@
-# modelica-association template.s
+# modelica-association template.
