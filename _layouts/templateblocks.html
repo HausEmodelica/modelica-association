@@ -1,0 +1,89 @@
+{%
+    include header/header.html
+%}
+
+{%
+    include header/mainnavigation.html
+%}
+
+<main class="layout--templateblocks">
+
+    <div class="dev--layout-helper">
+        Layout: templateblocks
+    </div>
+
+    <div class="vel--section py-10">
+        <div class="container is--container-xsmall">
+            <div class="row">
+                <div class="col-12">
+
+                    <h1>{{page.title}}</h1>
+
+                    {{content}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vel--section py-10">
+        <div class="container">
+            <div class="row vel--standardteaser">
+                <div class="col-12 col-lg-6 col-xl-4 vel--teaser-item">
+
+                    <div class="vel--teaser-item-wrap">
+
+                        <figure class="vel--teaser-head has--hidden-figcaption">
+                            <a href="" title="Linktitle">
+                                <picture>
+                                    <source srcset="{{ '/assets/images/images/example-news-a-536x290.jpg' | relative_url }}" media="(min-width: 1366px)">
+                                    <source srcset="{{ '/assets/images/images/example-news-a-536x290.jpg' | relative_url }}" media="(min-width: 768px)">
+                                    <img class="vel--teaser-image" src="{{ '/assets/images/images/example-news-a-536x290.jpg' | relative_url }}" alt="Alttext" />
+                                </picture>
+                            </a>
+                            <figcaption>Figcaption</figcaption>
+                        </figure>
+
+                        <div class="vel--teaser-body">
+                            <h3 class="h4 vel--teaser-body-head"><a href="" title="">Headline</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 vel--teaser-item">
+
+                    <div class="vel--teaser-item-wrap">
+
+                        <figure class="vel--teaser-head has--hidden-figcaption">
+                            <a href="{{ '/about/' | relative_url }}" title="Linktitle">
+                                <picture>
+                                    <source srcset="{{ '/assets/images/images/example-news-a-536x290.jpg' | relative_url }}" media="(min-width: 1366px)">
+                                    <source srcset="{{ '/assets/images/images/example-news-a-536x290.jpg' | relative_url }}" media="(min-width: 768px)">
+                                    <img class="vel--teaser-image" src="{{ '/assets/images/images/example-news-a-536x290.jpg' | relative_url }}" alt="Alttext" />
+                                </picture>
+                            </a>
+                            <figcaption>Figcaption</figcaption>
+                        </figure>
+
+                        <div class="vel--teaser-body">
+                            <h3 class="h4 vel--teaser-body-head"><a href="" title="">Headline</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                            <a href="{{ '/about/' | relative_url }}" class="btn btn-outline-primary" target="_blank" title="Link zur website">
+                                Link zur website
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{%
+    include footer/footer.html
+%}

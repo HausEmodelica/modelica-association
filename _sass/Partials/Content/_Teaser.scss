@@ -1,0 +1,29 @@
+.vel--standardteaser {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1 * $grid-gutter-width/2;
+    margin-bottom: -1 * $grid-gutter-width/2;
+
+    .vel--teaser-item {
+        padding-top: -1 * $grid-gutter-width/2;
+        padding-bottom: -1 * $grid-gutter-width/2;
+    }
+
+    .vel--teaser-item-wrap {
+        border: 1px solid;
+        padding: 2.25rem 2.5rem;
+        height: 100%;
+    }
+    .vel--teaser-head {
+        margin: -2.25rem -2.5rem 1.5rem -2.5rem;
+
+        > a {
+            display: block;
+        }
+    }
+    .vel--teaser-body {
+        .btn {
+            width: 100%;
+        }
+    }
+}
