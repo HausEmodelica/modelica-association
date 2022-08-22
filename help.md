@@ -1,3 +1,7 @@
+---
+title: Help
+layout: default-content
+---
 # Struktur
 
 
