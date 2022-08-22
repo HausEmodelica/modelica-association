@@ -6,5 +6,16 @@
         font-size: $font-size-sm;
         text-align: right;
         font-style: italic;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba($black,0.8);
+        padding: 0 0.5rem;
+        color: $white;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    &:hover figcaption {
+        opacity: 1;
     }
 }

@@ -1,3 +1,11 @@
+// linkbuttons
+.is--download-button,
+.is--external-button {
+    display: block;
+    font-weight: $font-weight-medium;
+    text-decoration: underline;
+}
+
 .vel--btn-format-reset {
     appearance: none;
     border: none;
@@ -8,7 +16,7 @@
     margin: 0;
 }
 
-.is--active{
+.is--active {
     color: $theme-red-c8;
 }
 .btn {
@@ -17,7 +25,7 @@
     }
 }
 .btn-primary {
-    &:hover{
+    &:hover {
         color:$white;
     }
 }
