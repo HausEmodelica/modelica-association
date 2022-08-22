@@ -1,11 +1,36 @@
 // linkbuttons
 .is--download-button,
 .is--external-button {
-    display: block;
+    display: flex;
     font-weight: $font-weight-medium;
     text-decoration: underline;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &::after {
+        width: 22px;
+        height: 22px;
+        margin-left: 1rem;
+        display: block;
+    }
+
+    &:hover {
+color: $primary;
+    }
 }
 
+.is--download-button {
+    &::after {
+        content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='a' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath id='c' d='M20.816,14.272v4.363c0,1.205-.976,2.181-2.181,2.181H3.365c-1.205,0-2.181-.976-2.181-2.181v-4.363' fill='none' stroke='%23384048' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='d' d='M5.547,8.818l5.453,5.453,5.453-5.453' fill='none' stroke='%23384048' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='e' d='M11,14.272V1.184' fill='none' stroke='%23384048' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
+    }
+}
+.is--external-button {
+    &::after {
+        content: url("data:image/svg+xml,%3Csvg version='1.1' id='a' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 22 22' enable-background='new 0 0 22 22' xml:space='preserve'%3E%3Cpath id='Pfad_316' fill='none' stroke='%23384048' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M17.7,12.1v6.7c0,1.2-1,2.2-2.2,2.2l0,0H3.2C2,21,1,20,1,18.8c0,0,0,0,0,0V6.6c0-1.2,1-2.2,2.2-2.2l0,0h6.7'/%3E%3Cpath id='Pfad_318' fill='none' stroke='%23384048' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M8.8,13.2L21,1v6.7V1h-6.7'/%3E%3C/svg%3E");
+    }
+}
+
+// 
 .vel--btn-format-reset {
     appearance: none;
     border: none;
