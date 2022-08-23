@@ -1,0 +1,55 @@
+// standard tables
+table {
+    width: 100%;
+
+    thead {
+        font-weight: 500;
+        text-transform: uppercase;
+
+        td {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background-color: #ccc;
+            }
+        }
+    }
+
+    th, td {
+        white-space: nowrap;
+        vertical-align: baseline;
+        padding: 0.25rem 0.5rem;
+
+        @include media-breakpoint-up(xl) {
+            padding: 2rem 2.5rem;
+        }
+    }
+}
+
+// add responsive functions
+.vel--table-wrap {
+    position: relative;
+    width: 100%;
+
+    @include media-breakpoint-down(xl) {
+        &::before {
+            content: "";
+            background-image: linear-gradient(90deg, transparent 0%, $white 75%);
+            width: 30px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 9999;
+        }
+    }
+    
+    .vel--table-scrollable {
+        overflow-x: auto;
+    }
+}
